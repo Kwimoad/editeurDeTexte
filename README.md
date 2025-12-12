@@ -1,91 +1,104 @@
-# 📝 Mini-Projet : Éditeur de Texte
+# Mini-Projet : Éditeur de Texte
 
-[![Java](https://img.shields.io/badge/Java-17-blue)](https://www.oracle.com/java/) 
-[![License](https://img.shields.io/badge/License-Academic-green)](#licence)
+**Module** : Programmation Avancée et Technologie JEE\
+**Encadrant** : Prof. Ali Yahyaouy\
+**Programme** : Master WISD 2025-2026
 
-**Module** : Programmation Avancée et Technologie JEE  
-**Encadrant** : Prof. Ali Yahyaouy  
-**Programme** : Master WISD  
+------------------------------------------------------------------------
 
----
+## Description
 
-## 📖 Description
+Ce projet est un **éditeur de texte** développé en Java.\
+Il permet la gestion de fichiers texte avec des fonctionnalités
+classiques telles que l'ouverture, la fermeture, la sauvegarde et la
+modification de texte.\
+L'interface est intuitive et intégrée avec des icônes pour chaque
+action.
 
-Ce projet est un **éditeur de texte** développé en Java.  
-Il permet la gestion de fichiers texte avec des fonctionnalités classiques :  
+------------------------------------------------------------------------
 
-- Créer, ouvrir et fermer des fichiers
-- Sauvegarder les modifications
-- Modifier la police et la couleur du texte
-- Interface graphique intuitive avec icônes pour chaque action
+## Structure du Projet
 
-L’objectif du projet est de pratiquer la programmation avancée en Java et la conception d’interfaces graphiques avec Swing.
-
----
-
-## 🗂 Structure du Projet
-
+``` text
 .
 ├── .idea
 ├── src
-│ └── application
-│ ├── editeurTexte.java # Interface principale avec toutes les fonctionnalités
-│ ├── SODialog.java # Interface pour récupérer le nom et le chemin du fichier
-│ └── GestionFichier.java # Classe pour l'ouverture et la fermeture des fichiers
-├── icon # Répertoire contenant les icônes des actions
-├── Main.java # Fichier principal pour exécuter l'application
+│   └── application
+│       ├── editeurTexte.java      # Interface principale contenant toutes les fonctionnalités
+│       ├── SODialog.java          # Interface pour récupérer le nom du fichier et son chemin
+│       └── GestionFichier.java    # Classe pour l'ouverture et la fermeture des fichiers
+├── icon                            # Répertoire contenant les icônes des actions
+├── Main.java                       # Fichier principal pour exécuter l'application
 ├── .gitignore
 ├── README.md
 └── editeurDeTexte.iml
+```
 
-yaml
-Copier le code
+------------------------------------------------------------------------
 
----
+## Détails des fichiers
 
-## 🛠 Détails des fichiers
+-   **`editeurTexte.java`**\
+    Interface principale de l'application. Contient toutes les
+    fonctionnalités liées à l'édition du texte (police, couleur, etc.).
 
-- **`editeurTexte.java`** : Interface principale de l'application, contenant toutes les fonctionnalités de l’éditeur.  
-- **`SODialog.java`** : Interface pour récupérer le nom et le chemin du fichier avant ouverture ou sauvegarde.  
-- **`GestionFichier.java`** : Gestion des fichiers (ouverture, lecture, écriture, fermeture).  
-- **`icon/`** : Contient toutes les icônes utilisées dans l’interface.  
-- **`Main.java`** : Point d’entrée de l’application pour exécuter l’éditeur.  
+-   **`SODialog.java`**\
+    Interface permettant de récupérer le nom du fichier et son chemin
+    avant d'effectuer des opérations telles que l'ouverture ou
+    l'enregistrement.
 
----
+-   **`GestionFichier.java`**\
+    Classe qui gère l'ouverture et la fermeture des fichiers, et
+    facilite la lecture et l'écriture dans des fichiers texte.
 
-## ⚙️ Fonctionnalités
+-   **`icon/`**\
+    Contient toutes les icônes utilisées dans l'interface pour les
+    actions (ouvrir, sauvegarder, nouveau fichier, etc.).
 
-| Fonctionnalité                | Description                                           |
-|--------------------------------|-------------------------------------------------------|
-| Nouveau fichier               | Crée un nouveau document vide                        |
-| Ouvrir fichier                | Ouvre un fichier texte existant                       |
-| Sauvegarder                   | Enregistre les modifications sur le fichier          |
-| Police & Style                | Modifier le style, la taille et le type de police    |
-| Couleur du texte              | Changer la couleur du texte sélectionné              |
-| Interface graphique           | Icônes intuitives pour chaque action                 |
+-   **`Main.java`**\
+    Point d'entrée de l'application. Permet de lancer l'éditeur de
+    texte.
 
----
+------------------------------------------------------------------------
 
-## 🚀 Installation & Exécution
+## Fonctionnalités
 
-1. **Cloner le projet** :  
-   ```bash
-   git clone https://github.com/Kwimoad/editeurDeTexte.git
-Accéder au répertoire :
+-   Ouvrir, créer et fermer des fichiers texte\
+-   Sauvegarder les modifications\
+-   Modifier la police et la couleur du texte\
+-   Interface graphique intuitive avec icônes pour les actions
 
-bash
-Copier le code
-cd editeurDeTexte
-Compiler le projet :
+------------------------------------------------------------------------
 
-bash
-Copier le code
-javac src/application/*.java Main.java
-Exécuter l'application :
+## Installation & Exécution
 
-bash
-Copier le code
-java Main
-👤 Auteur
-Karim Aouad
+1.  Cloner le projet :
+
+    ``` bash
+    git clone https://github.com/Kwimoad/editeurDeTexte.git
+    ```
+
+2.  Accéder au répertoire :
+
+    ``` bash
+    cd editeurDeTexte
+    ```
+
+3.  Compiler le projet :
+
+    ``` bash
+    javac src/application/*.java Main.java
+    ```
+
+4.  Exécuter l'application :
+
+    ``` bash
+    java Main
+    ```
+
+------------------------------------------------------------------------
+
+## Auteur
+
+**Karim Aouad**\
 Étudiant en Master WISD
