@@ -275,8 +275,6 @@ public class editeurTexte extends javax.swing.JFrame {
     private void policesButtonActionPerformed(java.awt.event.ActionEvent evt) {
         JTextPane area = getCurrentTextPane();
         if (area == null) return;
-
-        // 5 polices disponibles
         String[] polices = {"Arial", "Times New Roman", "Courier New", "Verdana", "Tahoma"};
         String choix = (String) JOptionPane.showInputDialog(
                 this,
@@ -287,20 +285,15 @@ public class editeurTexte extends javax.swing.JFrame {
                 polices,
                 polices[0]
         );
-
         if (choix != null) {
             SimpleAttributeSet attrs = new SimpleAttributeSet();
             StyleConstants.setFontFamily(attrs, choix);
-
             int start = area.getSelectionStart();
             int end = area.getSelectionEnd();
             StyledDocument doc = area.getStyledDocument();
-
             if (start == end) {
-                // pas de sélection, appliquer sur le futur texte
                 area.setCharacterAttributes(attrs, false);
             } else {
-                // appliquer sur le texte sélectionné
                 doc.setCharacterAttributes(start, end - start, attrs, false);
             }
         }
