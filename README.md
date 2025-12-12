@@ -100,5 +100,5 @@ action.
 
 ## Auteur
 
-**Karim Aouad**\
+**Abdelkarim Aouad**\
 Étudiant en Master WISD
